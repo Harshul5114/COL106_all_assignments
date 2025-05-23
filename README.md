@@ -4,16 +4,42 @@ This repository contains all assignments completed as part of the COL106 course 
 
 ## 📁 Repository Structure
 
-Each assignment consists of multiple Python files, organized per module/class. Key files typically include:
+Each assignment is contained in its own folder:
 
-- `main.py` – Entry point to run test cases or demo the assignment.
-- Core logic modules like `stack.py`, `heap.py`, `avl.py`, `planner.py`, etc.
-- Support classes such as `bin.py`, `object.py`, `flight.py`, etc.
-- Exception classes (when required).
+```
+Assignment 1/
+Assignment 2/
+Assignment 3/
+...
+```
+
+Each folder includes:
+
+* `main.py` – Entry point to test or demo the assignment.
+* Python modules implementing data structures and logic.
+* Supporting classes and exception handlers (if applicable).
 
 ## 🚀 How to Run
 
-For most assignments:
+To run a specific assignment, navigate to its directory and execute `main.py`:
 
 ```bash
+cd "Assignment 1"
 python3 main.py
+```
+
+Replace `1` with the assignment number you want to run.
+
+## Topics Covered
+
+* Stack-based maze navigation
+* AVL Trees for cargo allocation
+* Custom Heaps for scheduling
+* Graph traversal and routing algorithms
+* Priority-based simulation systems
+* Modular system design with exception handling
+
+## Note
+
+* All data structures and algorithms have been implemented manually as part of course constraints.
+* No external Python libraries (like NumPy, pandas, etc.) were used unless explicitly allowed.
