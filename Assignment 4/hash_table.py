@@ -111,6 +111,8 @@ class HashSet(HashTable):
                 new_index = self.probe(index, i, double_hash_value)
                 if self.table[new_index] == key:
                     return True
+                elif not self.table[new_index] or self.table[new_index] == "<EMPTY>":
+                    return False
                 i += 1
             return False
 
@@ -173,6 +175,8 @@ class HashMap(HashTable):
                 new_index = self.probe(index, i, double_hash_value)
                 if self.table[new_index] and self.table[new_index][0] == key:
                     return self.table[new_index][1]
+                elif not self.table[new_index]:
+                    return
                 i += 1
             return
 
