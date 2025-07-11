@@ -175,7 +175,7 @@ class HashMap(HashTable):
                 new_index = self.probe(index, i, double_hash_value)
                 if self.table[new_index] and self.table[new_index][0] == key:
                     return self.table[new_index][1]
-                elif not self.table[new_index]:
+                elif not self.table[new_index] or self.table[new_index] == "<EMPTY>":
                     return
                 i += 1
             return
